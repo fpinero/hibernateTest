@@ -11,9 +11,9 @@ import javax.persistence.Table;
 @Table(name="student")
 public class Student {
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id")
+	@Id						
+	@GeneratedValue(strategy=GenerationType.IDENTITY) //Indica que el valor es auto-incrementado por MySQL
+	@Column(name="id")								  //importante para q funcione localizar por el Id en hibernate
 	private int id;
 	
 	@Column(name="first_name")

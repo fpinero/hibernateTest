@@ -27,6 +27,7 @@ public class QueryStudentDemo {
 			session.beginTransaction();
 			
 			// query students
+			
 			List<Student> theStudents = session.createQuery("from Student").getResultList();
 			//cuidado con esto que student no es valido, es Student, el nombre de la clase Entity
 			
